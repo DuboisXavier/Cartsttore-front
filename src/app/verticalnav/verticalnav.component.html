@@ -1,0 +1,17 @@
+<div class="main-container">
+    <header class="header">
+      <clr-vertical-nav *ngFor="let item of categorieList">
+        
+        <a clrVerticalNavLink routerLink="./{{ item.id }}" routerLinkActive="active">{{ item.categorie }}</a>
+        <br>
+        <div class="nav-divider"></div>
+      </clr-vertical-nav>
+    </header>
+    <div class="content-container">
+      
+      <div class="content-area">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  

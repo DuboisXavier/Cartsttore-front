@@ -1,0 +1,8 @@
+<ul class="puceNone" *ngFor="let item of listPiece">
+    <li>Type de la pièce : {{ item.nom }}</li>
+    <li>Marque : {{ item.nom_Marque }}</li>
+    <li>Categorie : {{ item.categorie_piece }}</li>
+   
+    <li *ngIf="item.imageUrl"><img [src]="'http://localhost:39493/api' + item.imageUrl"></li>
+</ul>
+

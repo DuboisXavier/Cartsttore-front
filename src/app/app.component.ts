@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CategorieService } from './service/categorie.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CarStore';
+ 
+  constructor() { }
 }
+
+
